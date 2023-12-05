@@ -1,4 +1,4 @@
-``` mermaid
+```mermaid
 graph TD
   style build fill:#3498db,stroke:#2980b9
   style test fill:#2ecc71,stroke:#27ae60
