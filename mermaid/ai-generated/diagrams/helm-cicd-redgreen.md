@@ -1,3 +1,5 @@
+# CI/CD Pipeline
+
 ```mermaid
 graph TD
   style build fill:#3498db,stroke:#2980b9
@@ -23,26 +25,34 @@ graph TD
   end
 
   subgraph CI/CD Details
-    build_details(Build Details)<br>Compile source code, package artifacts
-    test_details(Test Details)<br>Run automated tests on artifacts
-    deploy_staging_details(Deploy to Staging Details)<br>Deploy to a staging environment for further testing
-    deploy_helm_repo_details(Helm Packaging Details)<br>Package Helm charts and push to repository
-    deploy_production_details(Deploy to Production Details)<br>Final deployment to production environment
+    classDef buildClass fill:#3498db,stroke:#2980b9
+    class build buildClass
+    classDef testClass fill:#2ecc71,stroke:#27ae60
+    class test testClass
+    classDef deployStagingClass fill:#f39c12,stroke:#d35400
+    class deploy_staging deployStagingClass
+    classDef deployHelmClass fill:#9b59b6,stroke:#8e44ad
+    class deploy_helm_repo deployHelmClass
+    classDef deployProductionClass fill:#e74c3c,stroke:#c0392b
+    class deploy_production deployProductionClass
+    classDef deployMFClass fill:#27ae60,stroke:#2ecc71
+    class deploy_mfe deployMFClass
   end
 
   subgraph MFE Details
-    deploy_mfe_details(Deploy Micro Frontend Details)<br>Deploy the Micro Frontend
-    deploy_mfe_green_details(Deploy MFE - Green Details)<br>Green deployment of the Micro Frontend
-    deploy_mfe_red_details(Deploy MFE - Red Details)<br>Red deployment of the Micro Frontend
+    classDef deployMFEDetailsClass fill:#27ae60,stroke:#2ecc71
+    class deploy_mfe_details deployMFEDetailsClass
+    classDef deployMFEGreenDetailsClass fill:#27ae60,stroke:#2ecc71
+    class deploy_mfe_green_details deployMFEGreenDetailsClass
+    classDef deployMFERedDetailsClass fill:#e74c3c,stroke:#c0392b
+    class deploy_mfe_red_details deployMFERedDetailsClass
   end
 
-  build --> build_details
-  test --> test_details
-  deploy_staging --> deploy_staging_details
-  deploy_helm_repo --> deploy_helm_repo_details
-  deploy_production --> deploy_production_details
-  deploy_mfe --> deploy_mfe_details
-  deploy_mfe_green --> deploy_mfe_green_details
-  deploy_mfe_red --> deploy_mfe_red_details
-
-```
+  build --> build_details("Compile source code, package artifacts")
+  test --> test_details("Run automated tests on artifacts")
+  deploy_staging --> deploy_staging_details("Deploy to a staging environment for further testing")
+  deploy_helm_repo --> deploy_helm_repo_details("Package Helm charts and push to repository")
+  deploy_production --> deploy_production_details("Final deployment to production environment")
+  deploy_mfe --> deploy_mfe_details("Deploy the Micro Frontend")
+  deploy_mfe_green --> deploy_mfe_green_details("Green deployment of the Micro Frontend")
+  deploy_mfe_red --> deploy_mfe_red_details("Red deployment of the Micro Frontend")

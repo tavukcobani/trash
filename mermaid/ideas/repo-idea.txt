@@ -1,0 +1,60 @@
+my-monorepo/
+|-- apps/
+|   |-- mfe1/
+|   |   |-- src/
+|   |   |-- public/
+|   |   |-- tests/
+|   |   |-- charts/
+|   |   |   |-- mfe1-chart/
+|   |   |       |-- charts/
+|   |   |       |-- templates/
+|   |   |       |-- values.yaml
+|   |   |       |-- Chart.yaml
+|   |   |
+|   |   |-- infrastructure/
+|   |       |-- k8s/
+|   |           |-- deployment/
+|   |           |-- services/
+|   |           |-- ingress/
+|   |           |-- ...
+|   |
+|   |-- mfe2/
+|   |   |-- src/
+|   |   |-- public/
+|   |   |-- tests/
+|   |   |-- charts/
+|   |   |   |-- mfe2-chart/
+|   |   |       |-- charts/
+|   |   |       |-- templates/
+|   |   |       |-- values.yaml
+|   |   |       |-- Chart.yaml
+|   |   |
+|   |   |-- infrastructure/
+|   |       |-- k8s/
+|   |           |-- deployment/
+|   |           |-- services/
+|   |           |-- ingress/
+|   |           |-- ...
+|   |
+|   |-- app-shell/
+|       |-- src/
+|       |-- public/
+|       |-- tests/
+|       |-- charts/
+|           |-- app-shell-chart/
+|               |-- charts/
+|               |-- templates/
+|               |-- values.yaml
+|               |-- Chart.yaml
+|       |-- infrastructure/
+|           |-- k8s/
+|               |-- deployment/
+|               |-- services/
+|               |-- ingress/
+|               |-- ...
+|
+|-- .gitignore
+|-- README.md
+|-- Jenkinsfile
+|-- docker-compose.yaml
+|-- ...
