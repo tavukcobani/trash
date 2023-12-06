@@ -1,1 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2023-12-05T02:49:47.004Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="20.5.0" etag="lUY6qo4WJptv7sb4spnW" type="github"><diagram id="KgwjyjGq81Pzgmuk_xyq">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-12-06T02:50:57.975Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="xSxfl0TszMze_USGoYG8" version="20.5.0" type="github">
+  <diagram id="KgwjyjGq81Pzgmuk_xyq" name="Page-1">
+    <mxGraphModel dx="742" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-1" value="&lt;span style=&quot;&quot;&gt;Helm Repository&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="330" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-3" value="Helm Chart" style="whiteSpace=wrap;html=1;dashed=1;textDirection=ltr;verticalAlign=top;align=left;fillColor=none;gradientColor=default;strokeColor=default;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="130" width="310" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-4" value="k8s" style="whiteSpace=wrap;html=1;dashed=1;textDirection=ltr;verticalAlign=top;align=left;fillColor=none;gradientColor=default;strokeColor=default;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="155" width="290" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-5" value="terraform" style="whiteSpace=wrap;html=1;dashed=1;textDirection=ltr;verticalAlign=top;align=left;fillColor=none;gradientColor=default;strokeColor=default;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-6" value="aws" style="whiteSpace=wrap;html=1;dashed=1;textDirection=ltr;verticalAlign=top;align=left;fillColor=none;gradientColor=default;strokeColor=default;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="210" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-7" value="yaml" style="whiteSpace=wrap;html=1;dashed=1;textDirection=ltr;verticalAlign=top;align=left;fillColor=none;gradientColor=default;strokeColor=default;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="120" as="sourcePoint" />
+            <mxPoint x="430" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-11" value="in Artifactory&lt;br&gt;each chart in the repo&lt;br&gt;versioned&lt;br&gt;change-log" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#23445d;fillColor=#bac8d3;" vertex="1" parent="1">
+          <mxGeometry x="430" y="75" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="fm-Vil1wIKmxEvW3gIhS-3" target="fm-Vil1wIKmxEvW3gIhS-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="170" as="sourcePoint" />
+            <mxPoint x="180" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-13" value="or azure" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#ae4132;fillColor=#fad9d5;" vertex="1" parent="1">
+          <mxGeometry x="405" y="215" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="fm-Vil1wIKmxEvW3gIhS-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="230" as="sourcePoint" />
+            <mxPoint x="190" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-15" value="each k8s deployment&amp;nbsp;&lt;br&gt;can be a helm chart" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b46504;fillColor=#fad7ac;" vertex="1" parent="1">
+          <mxGeometry x="530" y="170" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-16" value="group of helm charts&lt;br&gt;can be a helm chart" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#0e8088;fillColor=#b0e3e6;" vertex="1" parent="1">
+          <mxGeometry x="600" y="210" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fm-Vil1wIKmxEvW3gIhS-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.024;entryY=0.529;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="fm-Vil1wIKmxEvW3gIhS-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="170" as="sourcePoint" />
+            <mxPoint x="170" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
